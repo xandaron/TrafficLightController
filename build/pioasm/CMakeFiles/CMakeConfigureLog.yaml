@@ -1,0 +1,99 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/dev/CMake/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.22621 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/dev/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/dev/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/dev/CMake/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: D:/dev/Visual Studio/2022/Community/VC/Tools/MSVC/14.37.32822/bin/Hostx86/x86/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32822 for x86
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.37.32822.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        D:/Projects/Pico/TrafficLightController/build/pioasm/CMakeFiles/3.27.3/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/dev/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:1158 (message)"
+      - "D:/dev/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "D:/dev/CMake/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        Note: including file: D:\\Projects\\Pico\\TrafficLightController\\build\\pioasm\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/dev/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "D:/dev/CMake/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "D:/Projects/Pico/TrafficLightController/build/pioasm/CMakeFiles/CMakeScratch/TryCompile-8bre19"
+      binary: "D:/Projects/Pico/TrafficLightController/build/pioasm/CMakeFiles/CMakeScratch/TryCompile-8bre19"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Projects/Pico/TrafficLightController/build/pioasm/CMakeFiles/CMakeScratch/TryCompile-8bre19'
+        
+        Run Build Command(s): D:/dev/CMake/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_b81bf\\fast
+        	"D:\\dev\\Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX86\\x86\\nmake.exe"  -f CMakeFiles\\cmTC_b81bf.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_b81bf.dir\\build
+        Building CXX object CMakeFiles/cmTC_b81bf.dir/CMakeCXXCompilerABI.cpp.obj
+        	D:\\dev\\CMake\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_b81bf.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir=D:\\Projects\\Pico\\TrafficLightController\\build\\pioasm\\CMakeFiles\\CMakeScratch\\TryCompile-8bre19 --filter-prefix="Note: including file: " -- D:\\dev\\VISUAL~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe @C:\\Users\\xanda\\AppData\\Local\\Temp\\nm8EE3.tmp
+        CMakeCXXCompilerABI.cpp
+        Linking CXX executable cmTC_b81bf.exe
+        	D:\\dev\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_b81bf.dir --rc=D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\rc.exe --mt=D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\mt.exe --manifests -- D:\\dev\\VISUAL~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_b81bf.dir\\objects1.rsp @C:\\Users\\xanda\\AppData\\Local\\Temp\\nm8F90.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_b81bf.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_b81bf.dir/embed.manifest
+        RC Pass 1:
+        D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_b81bf.dir/manifest.res CMakeFiles\\cmTC_b81bf.dir/manifest.rc
+        LINK Pass 1:
+        D:\\dev\\VISUAL~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_b81bf.dir\\objects1.rsp /out:cmTC_b81bf.exe /implib:cmTC_b81bf.lib /pdb:D:\\Projects\\Pico\\TrafficLightController\\build\\pioasm\\CMakeFiles\\CMakeScratch\\TryCompile-8bre19\\cmTC_b81bf.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_b81bf.dir/intermediate.manifest CMakeFiles\\cmTC_b81bf.dir/manifest.res
+        MT:
+        D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\mt.exe /nologo /manifest CMakeFiles\\cmTC_b81bf.dir/intermediate.manifest /out:CMakeFiles\\cmTC_b81bf.dir/embed.manifest /notify_update
+        RC Pass 2:
+        D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_b81bf.dir/manifest.res CMakeFiles\\cmTC_b81bf.dir/manifest.rc
+        FINAL LINK:
+        D:\\dev\\VISUAL~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_b81bf.dir\\objects1.rsp /out:cmTC_b81bf.exe /implib:cmTC_b81bf.lib /pdb:D:\\Projects\\Pico\\TrafficLightController\\build\\pioasm\\CMakeFiles\\CMakeScratch\\TryCompile-8bre19\\cmTC_b81bf.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_b81bf.dir/intermediate.manifest CMakeFiles\\cmTC_b81bf.dir/manifest.res
+        
+      exitCode: 0
+...

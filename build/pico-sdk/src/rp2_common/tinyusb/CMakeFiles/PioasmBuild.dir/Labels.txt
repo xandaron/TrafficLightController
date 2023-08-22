@@ -1,0 +1,13 @@
+# Target labels
+ PioasmBuild
+# Source files and their labels
+D:/Projects/Pico/TrafficLightController/build/pico-sdk/src/rp2_common/tinyusb/CMakeFiles/PioasmBuild
+D:/Projects/Pico/TrafficLightController/build/pico-sdk/src/rp2_common/tinyusb/CMakeFiles/PioasmBuild.rule
+D:/Projects/Pico/TrafficLightController/build/pico-sdk/src/rp2_common/tinyusb/CMakeFiles/PioasmBuild-complete.rule
+D:/Projects/Pico/TrafficLightController/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-build.rule
+D:/Projects/Pico/TrafficLightController/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-configure.rule
+D:/Projects/Pico/TrafficLightController/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-download.rule
+D:/Projects/Pico/TrafficLightController/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-install.rule
+D:/Projects/Pico/TrafficLightController/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir.rule
+D:/Projects/Pico/TrafficLightController/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch.rule
+D:/Projects/Pico/TrafficLightController/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-update.rule
