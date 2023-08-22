@@ -109,8 +109,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/Projects/Pico/TrafficLightController/build/elf2uf2/CMakeFiles/CMakeScratch/TryCompile-y0k7xc"
-      binary: "D:/Projects/Pico/TrafficLightController/build/elf2uf2/CMakeFiles/CMakeScratch/TryCompile-y0k7xc"
+      source: "D:/Projects/Pico/TrafficLightController/build/elf2uf2/CMakeFiles/CMakeScratch/TryCompile-ofqseg"
+      binary: "D:/Projects/Pico/TrafficLightController/build/elf2uf2/CMakeFiles/CMakeScratch/TryCompile-ofqseg"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -119,28 +119,28 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Projects/Pico/TrafficLightController/build/elf2uf2/CMakeFiles/CMakeScratch/TryCompile-y0k7xc'
+        Change Dir: 'D:/Projects/Pico/TrafficLightController/build/elf2uf2/CMakeFiles/CMakeScratch/TryCompile-ofqseg'
         
-        Run Build Command(s): D:/dev/CMake/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_ff0b6\\fast
-        	"D:\\dev\\Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX86\\x86\\nmake.exe"  -f CMakeFiles\\cmTC_ff0b6.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_ff0b6.dir\\build
-        Building C object CMakeFiles/cmTC_ff0b6.dir/CMakeCCompilerABI.c.obj
-        	D:\\dev\\CMake\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_ff0b6.dir\\CMakeCCompilerABI.c.obj.d --working-dir=D:\\Projects\\Pico\\TrafficLightController\\build\\elf2uf2\\CMakeFiles\\CMakeScratch\\TryCompile-y0k7xc --filter-prefix="Note: including file: " -- D:\\dev\\VISUAL~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe @C:\\Users\\xanda\\AppData\\Local\\Temp\\nm5963.tmp
+        Run Build Command(s): D:/dev/CMake/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_ebdbc\\fast
+        	"D:\\dev\\Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX86\\x86\\nmake.exe"  -f CMakeFiles\\cmTC_ebdbc.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_ebdbc.dir\\build
+        Building C object CMakeFiles/cmTC_ebdbc.dir/CMakeCCompilerABI.c.obj
+        	D:\\dev\\CMake\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_ebdbc.dir\\CMakeCCompilerABI.c.obj.d --working-dir=D:\\Projects\\Pico\\TrafficLightController\\build\\elf2uf2\\CMakeFiles\\CMakeScratch\\TryCompile-ofqseg --filter-prefix="Note: including file: " -- D:\\dev\\VISUAL~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe @C:\\Users\\xanda\\AppData\\Local\\Temp\\nmE514.tmp
         CMakeCCompilerABI.c
-        Linking C executable cmTC_ff0b6.exe
-        	D:\\dev\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_ff0b6.dir --rc=D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\rc.exe --mt=D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\mt.exe --manifests -- D:\\dev\\VISUAL~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_ff0b6.dir\\objects1.rsp @C:\\Users\\xanda\\AppData\\Local\\Temp\\nm5A01.tmp
+        Linking C executable cmTC_ebdbc.exe
+        	D:\\dev\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_ebdbc.dir --rc=D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\rc.exe --mt=D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\mt.exe --manifests -- D:\\dev\\VISUAL~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_ebdbc.dir\\objects1.rsp @C:\\Users\\xanda\\AppData\\Local\\Temp\\nmE5F0.tmp
         Visual Studio Incremental Link with embedded manifests
-        Create CMakeFiles\\cmTC_ff0b6.dir/manifest.rc
-        Create empty: CMakeFiles\\cmTC_ff0b6.dir/embed.manifest
+        Create CMakeFiles\\cmTC_ebdbc.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_ebdbc.dir/embed.manifest
         RC Pass 1:
-        D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_ff0b6.dir/manifest.res CMakeFiles\\cmTC_ff0b6.dir/manifest.rc
+        D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_ebdbc.dir/manifest.res CMakeFiles\\cmTC_ebdbc.dir/manifest.rc
         LINK Pass 1:
-        D:\\dev\\VISUAL~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_ff0b6.dir\\objects1.rsp /out:cmTC_ff0b6.exe /implib:cmTC_ff0b6.lib /pdb:D:\\Projects\\Pico\\TrafficLightController\\build\\elf2uf2\\CMakeFiles\\CMakeScratch\\TryCompile-y0k7xc\\cmTC_ff0b6.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_ff0b6.dir/intermediate.manifest CMakeFiles\\cmTC_ff0b6.dir/manifest.res
+        D:\\dev\\VISUAL~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_ebdbc.dir\\objects1.rsp /out:cmTC_ebdbc.exe /implib:cmTC_ebdbc.lib /pdb:D:\\Projects\\Pico\\TrafficLightController\\build\\elf2uf2\\CMakeFiles\\CMakeScratch\\TryCompile-ofqseg\\cmTC_ebdbc.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_ebdbc.dir/intermediate.manifest CMakeFiles\\cmTC_ebdbc.dir/manifest.res
         MT:
-        D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\mt.exe /nologo /manifest CMakeFiles\\cmTC_ff0b6.dir/intermediate.manifest /out:CMakeFiles\\cmTC_ff0b6.dir/embed.manifest /notify_update
+        D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\mt.exe /nologo /manifest CMakeFiles\\cmTC_ebdbc.dir/intermediate.manifest /out:CMakeFiles\\cmTC_ebdbc.dir/embed.manifest /notify_update
         RC Pass 2:
-        D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_ff0b6.dir/manifest.res CMakeFiles\\cmTC_ff0b6.dir/manifest.rc
+        D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_ebdbc.dir/manifest.res CMakeFiles\\cmTC_ebdbc.dir/manifest.rc
         FINAL LINK:
-        D:\\dev\\VISUAL~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_ff0b6.dir\\objects1.rsp /out:cmTC_ff0b6.exe /implib:cmTC_ff0b6.lib /pdb:D:\\Projects\\Pico\\TrafficLightController\\build\\elf2uf2\\CMakeFiles\\CMakeScratch\\TryCompile-y0k7xc\\cmTC_ff0b6.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_ff0b6.dir/intermediate.manifest CMakeFiles\\cmTC_ff0b6.dir/manifest.res
+        D:\\dev\\VISUAL~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_ebdbc.dir\\objects1.rsp /out:cmTC_ebdbc.exe /implib:cmTC_ebdbc.lib /pdb:D:\\Projects\\Pico\\TrafficLightController\\build\\elf2uf2\\CMakeFiles\\CMakeScratch\\TryCompile-ofqseg\\cmTC_ebdbc.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_ebdbc.dir/intermediate.manifest CMakeFiles\\cmTC_ebdbc.dir/manifest.res
         
       exitCode: 0
   -
@@ -152,8 +152,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/Projects/Pico/TrafficLightController/build/elf2uf2/CMakeFiles/CMakeScratch/TryCompile-mos0n2"
-      binary: "D:/Projects/Pico/TrafficLightController/build/elf2uf2/CMakeFiles/CMakeScratch/TryCompile-mos0n2"
+      source: "D:/Projects/Pico/TrafficLightController/build/elf2uf2/CMakeFiles/CMakeScratch/TryCompile-fwk1lh"
+      binary: "D:/Projects/Pico/TrafficLightController/build/elf2uf2/CMakeFiles/CMakeScratch/TryCompile-fwk1lh"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -162,28 +162,28 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Projects/Pico/TrafficLightController/build/elf2uf2/CMakeFiles/CMakeScratch/TryCompile-mos0n2'
+        Change Dir: 'D:/Projects/Pico/TrafficLightController/build/elf2uf2/CMakeFiles/CMakeScratch/TryCompile-fwk1lh'
         
-        Run Build Command(s): D:/dev/CMake/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_b85c1\\fast
-        	"D:\\dev\\Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX86\\x86\\nmake.exe"  -f CMakeFiles\\cmTC_b85c1.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_b85c1.dir\\build
-        Building CXX object CMakeFiles/cmTC_b85c1.dir/CMakeCXXCompilerABI.cpp.obj
-        	D:\\dev\\CMake\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_b85c1.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir=D:\\Projects\\Pico\\TrafficLightController\\build\\elf2uf2\\CMakeFiles\\CMakeScratch\\TryCompile-mos0n2 --filter-prefix="Note: including file: " -- D:\\dev\\VISUAL~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe @C:\\Users\\xanda\\AppData\\Local\\Temp\\nm650C.tmp
+        Run Build Command(s): D:/dev/CMake/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_ae3e7\\fast
+        	"D:\\dev\\Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX86\\x86\\nmake.exe"  -f CMakeFiles\\cmTC_ae3e7.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_ae3e7.dir\\build
+        Building CXX object CMakeFiles/cmTC_ae3e7.dir/CMakeCXXCompilerABI.cpp.obj
+        	D:\\dev\\CMake\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_ae3e7.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir=D:\\Projects\\Pico\\TrafficLightController\\build\\elf2uf2\\CMakeFiles\\CMakeScratch\\TryCompile-fwk1lh --filter-prefix="Note: including file: " -- D:\\dev\\VISUAL~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe @C:\\Users\\xanda\\AppData\\Local\\Temp\\nmF07E.tmp
         CMakeCXXCompilerABI.cpp
-        Linking CXX executable cmTC_b85c1.exe
-        	D:\\dev\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_b85c1.dir --rc=D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\rc.exe --mt=D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\mt.exe --manifests -- D:\\dev\\VISUAL~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_b85c1.dir\\objects1.rsp @C:\\Users\\xanda\\AppData\\Local\\Temp\\nm6599.tmp
+        Linking CXX executable cmTC_ae3e7.exe
+        	D:\\dev\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_ae3e7.dir --rc=D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\rc.exe --mt=D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\mt.exe --manifests -- D:\\dev\\VISUAL~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_ae3e7.dir\\objects1.rsp @C:\\Users\\xanda\\AppData\\Local\\Temp\\nmF11B.tmp
         Visual Studio Incremental Link with embedded manifests
-        Create CMakeFiles\\cmTC_b85c1.dir/manifest.rc
-        Create empty: CMakeFiles\\cmTC_b85c1.dir/embed.manifest
+        Create CMakeFiles\\cmTC_ae3e7.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_ae3e7.dir/embed.manifest
         RC Pass 1:
-        D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_b85c1.dir/manifest.res CMakeFiles\\cmTC_b85c1.dir/manifest.rc
+        D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_ae3e7.dir/manifest.res CMakeFiles\\cmTC_ae3e7.dir/manifest.rc
         LINK Pass 1:
-        D:\\dev\\VISUAL~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_b85c1.dir\\objects1.rsp /out:cmTC_b85c1.exe /implib:cmTC_b85c1.lib /pdb:D:\\Projects\\Pico\\TrafficLightController\\build\\elf2uf2\\CMakeFiles\\CMakeScratch\\TryCompile-mos0n2\\cmTC_b85c1.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_b85c1.dir/intermediate.manifest CMakeFiles\\cmTC_b85c1.dir/manifest.res
+        D:\\dev\\VISUAL~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_ae3e7.dir\\objects1.rsp /out:cmTC_ae3e7.exe /implib:cmTC_ae3e7.lib /pdb:D:\\Projects\\Pico\\TrafficLightController\\build\\elf2uf2\\CMakeFiles\\CMakeScratch\\TryCompile-fwk1lh\\cmTC_ae3e7.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_ae3e7.dir/intermediate.manifest CMakeFiles\\cmTC_ae3e7.dir/manifest.res
         MT:
-        D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\mt.exe /nologo /manifest CMakeFiles\\cmTC_b85c1.dir/intermediate.manifest /out:CMakeFiles\\cmTC_b85c1.dir/embed.manifest /notify_update
+        D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\mt.exe /nologo /manifest CMakeFiles\\cmTC_ae3e7.dir/intermediate.manifest /out:CMakeFiles\\cmTC_ae3e7.dir/embed.manifest /notify_update
         RC Pass 2:
-        D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_b85c1.dir/manifest.res CMakeFiles\\cmTC_b85c1.dir/manifest.rc
+        D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_ae3e7.dir/manifest.res CMakeFiles\\cmTC_ae3e7.dir/manifest.rc
         FINAL LINK:
-        D:\\dev\\VISUAL~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_b85c1.dir\\objects1.rsp /out:cmTC_b85c1.exe /implib:cmTC_b85c1.lib /pdb:D:\\Projects\\Pico\\TrafficLightController\\build\\elf2uf2\\CMakeFiles\\CMakeScratch\\TryCompile-mos0n2\\cmTC_b85c1.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_b85c1.dir/intermediate.manifest CMakeFiles\\cmTC_b85c1.dir/manifest.res
+        D:\\dev\\VISUAL~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_ae3e7.dir\\objects1.rsp /out:cmTC_ae3e7.exe /implib:cmTC_ae3e7.lib /pdb:D:\\Projects\\Pico\\TrafficLightController\\build\\elf2uf2\\CMakeFiles\\CMakeScratch\\TryCompile-fwk1lh\\cmTC_ae3e7.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_ae3e7.dir/intermediate.manifest CMakeFiles\\cmTC_ae3e7.dir/manifest.res
         
       exitCode: 0
 ...

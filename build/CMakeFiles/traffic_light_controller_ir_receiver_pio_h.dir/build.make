@@ -57,9 +57,9 @@ include CMakeFiles\traffic_light_controller_ir_receiver_pio_h.dir\progress.make
 
 CMakeFiles\traffic_light_controller_ir_receiver_pio_h: ir_receiver.pio.h
 
-ir_receiver.pio.h: D:\Projects\Pico\TrafficLightController\ir_receiver.pio
+ir_receiver.pio.h: D:\Projects\Pico\TrafficLightController\ir_receiver_library\ir_receiver.pio
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=D:\Projects\Pico\TrafficLightController\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ir_receiver.pio.h"
-	pioasm\pioasm.exe -o c-sdk D:/Projects/Pico/TrafficLightController/ir_receiver.pio D:/Projects/Pico/TrafficLightController/build/ir_receiver.pio.h
+	pioasm\pioasm.exe -o c-sdk D:/Projects/Pico/TrafficLightController/ir_receiver_library/ir_receiver.pio D:/Projects/Pico/TrafficLightController/build/ir_receiver.pio.h
 
 traffic_light_controller_ir_receiver_pio_h: CMakeFiles\traffic_light_controller_ir_receiver_pio_h
 traffic_light_controller_ir_receiver_pio_h: ir_receiver.pio.h

@@ -57,9 +57,9 @@ include CMakeFiles\traffic_light_controller_light_controller_pio_h.dir\progress.
 
 CMakeFiles\traffic_light_controller_light_controller_pio_h: light_controller.pio.h
 
-light_controller.pio.h: D:\Projects\Pico\TrafficLightController\light_controller.pio
+light_controller.pio.h: D:\Projects\Pico\TrafficLightController\light_controller_library\light_controller.pio
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=D:\Projects\Pico\TrafficLightController\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating light_controller.pio.h"
-	pioasm\pioasm.exe -o c-sdk D:/Projects/Pico/TrafficLightController/light_controller.pio D:/Projects/Pico/TrafficLightController/build/light_controller.pio.h
+	pioasm\pioasm.exe -o c-sdk D:/Projects/Pico/TrafficLightController/light_controller_library/light_controller.pio D:/Projects/Pico/TrafficLightController/build/light_controller.pio.h
 
 traffic_light_controller_light_controller_pio_h: CMakeFiles\traffic_light_controller_light_controller_pio_h
 traffic_light_controller_light_controller_pio_h: light_controller.pio.h
