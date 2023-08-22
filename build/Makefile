@@ -132,6 +132,19 @@ traffic_light_controller_light_controller_pio_h\fast:
 .PHONY : traffic_light_controller_light_controller_pio_h\fast
 
 #=============================================================================
+# Target rules for targets named traffic_light_controller_ir_receiver_pio_h
+
+# Build rule for target.
+traffic_light_controller_ir_receiver_pio_h: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) traffic_light_controller_ir_receiver_pio_h
+.PHONY : traffic_light_controller_ir_receiver_pio_h
+
+# fast build rule for target.
+traffic_light_controller_ir_receiver_pio_h\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\traffic_light_controller_ir_receiver_pio_h.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\traffic_light_controller_ir_receiver_pio_h.dir\build
+.PHONY : traffic_light_controller_ir_receiver_pio_h\fast
+
+#=============================================================================
 # Target rules for targets named ELF2UF2Build
 
 # Build rule for target.
@@ -1778,6 +1791,7 @@ help:
 	@echo ... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h
 	@echo ... tinyusb_pico_pio_usb_usb_rx_pio_h
 	@echo ... tinyusb_pico_pio_usb_usb_tx_pio_h
+	@echo ... traffic_light_controller_ir_receiver_pio_h
 	@echo ... traffic_light_controller_light_controller_pio_h
 	@echo ... bs2_default
 	@echo ... traffic_light_controller

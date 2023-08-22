@@ -2949,6 +2949,7 @@ CMakeFiles\traffic_light_controller.dir\D_\dev\pico-sdk\src\rp2_common\pico_uniq
 CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: D:\Projects\Pico\TrafficLightController\traffic_light_controller.c
 CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: D:\dev\pico-sdk\src\boards\include\boards\waveshare_rp2040_zero.h
 CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: D:\dev\pico-sdk\src\rp2_common\cmsis\include\cmsis\rename_exceptions.h
+CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: ir_receiver.pio.h
 CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: light_controller.pio.h
 CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: generated\pico_base\pico\config_autogen.h
 CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: generated\pico_base\pico\version.h
@@ -2961,6 +2962,7 @@ CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: D:\dev\p
 CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: D:\dev\pico-sdk\src\common\pico_time\include\pico\time.h
 CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: D:\dev\pico-sdk\src\rp2040\hardware_regs\include\hardware\platform_defs.h
 CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: D:\dev\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\addressmap.h
+CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: D:\dev\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\clocks.h
 CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: D:\dev\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\dreq.h
 CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: D:\dev\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\intctrl.h
 CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: D:\dev\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\io_bank0.h
@@ -2970,6 +2972,7 @@ CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: D:\dev\p
 CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: D:\dev\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\sio.h
 CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: D:\dev\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\timer.h
 CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: D:\dev\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\uart.h
+CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: D:\dev\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\clocks.h
 CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: D:\dev\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\interp.h
 CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: D:\dev\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\iobank0.h
 CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: D:\dev\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\padsbank0.h
@@ -2978,6 +2981,7 @@ CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: D:\dev\p
 CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: D:\dev\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\timer.h
 CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: D:\dev\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\uart.h
 CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: D:\dev\pico-sdk\src\rp2_common\hardware_base\include\hardware\address_mapped.h
+CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: D:\dev\pico-sdk\src\rp2_common\hardware_clocks\include\hardware\clocks.h
 CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: D:\dev\pico-sdk\src\rp2_common\hardware_gpio\include\hardware\gpio.h
 CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: D:\dev\pico-sdk\src\rp2_common\hardware_irq\include\hardware\irq.h
 CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: D:\dev\pico-sdk\src\rp2_common\hardware_pio\include\hardware\pio.h
@@ -3502,5 +3506,7 @@ D:\dev\pico-sdk\src\rp2_common\pico_unique_id\include\pico\unique_id.h:
 D:\dev\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c:
 
 D:\dev\pico-sdk\src\common\pico_stdlib\include\pico\stdlib.h:
+
+ir_receiver.pio.h:
 
 light_controller.pio.h:

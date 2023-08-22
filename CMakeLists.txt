@@ -25,20 +25,15 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(traffic_light_controller)
+add_executable(traffic_light_controller
+              traffic_light_controller.c
+              )
 
 pico_generate_pio_header(traffic_light_controller ${CMAKE_CURRENT_LIST_DIR}/light_controller.pio)
+pico_generate_pio_header(traffic_light_controller ${CMAKE_CURRENT_LIST_DIR}/ir_receiver.pio)
 
-target_sources(traffic_light_controller PRIVATE traffic_light_controller.c)
-
-pico_set_program_name(traffic_light_controller "TrafficLightController")
-pico_set_program_version(traffic_light_controller "0.1")
-
-# no_flash means the target is to run from RAM
-# pico_set_binary_type(TrafficLightController no_flash)
-
-pico_enable_stdio_uart(traffic_light_controller 0)
 pico_enable_stdio_usb(traffic_light_controller 1)
+pico_enable_stdio_uart(traffic_light_controller 0)
 
 target_link_libraries(traffic_light_controller PRIVATE
         pico_stdlib
@@ -52,4 +47,3 @@ target_include_directories(traffic_light_controller PRIVATE
 )
 
 pico_add_extra_outputs(traffic_light_controller)
-

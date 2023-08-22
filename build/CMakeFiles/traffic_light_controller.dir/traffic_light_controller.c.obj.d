@@ -74,4 +74,8 @@ CMakeFiles\traffic_light_controller.dir\traffic_light_controller.c.obj: \
  D:\dev\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/pio.h \
  D:\dev\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/pio.h \
  D:\dev\pico-sdk\src\rp2_common\hardware_pio\include/hardware/pio_instructions.h \
- D:\Projects\Pico\TrafficLightController\build/light_controller.pio.h
+ D:\dev\pico-sdk\src\rp2_common\hardware_clocks\include/hardware/clocks.h \
+ D:\dev\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/clocks.h \
+ D:\dev\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/clocks.h \
+ D:\Projects\Pico\TrafficLightController\build/light_controller.pio.h \
+ D:\Projects\Pico\TrafficLightController\build/ir_receiver.pio.h

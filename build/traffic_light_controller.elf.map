@@ -53,6 +53,8 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/traffic_light_controller.dir/traffic_light_controller.c.obj
  .data          0x00000000        0x0 CMakeFiles/traffic_light_controller.dir/traffic_light_controller.c.obj
  .bss           0x00000000        0x0 CMakeFiles/traffic_light_controller.dir/traffic_light_controller.c.obj
+ .text.ir_decode_frame
+                0x00000000       0x2c CMakeFiles/traffic_light_controller.dir/traffic_light_controller.c.obj
  .text          0x00000000        0x0 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .data          0x00000000        0x0 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .bss           0x00000000        0x0 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -80,8 +82,6 @@ Discarded input sections
                 0x00000000       0x28 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .text.gpio_get_function
                 0x00000000       0x14 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .text.gpio_set_pulls
-                0x00000000       0x30 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .text.gpio_set_irqover
                 0x00000000       0x24 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .text.gpio_set_inover
@@ -294,8 +294,12 @@ Discarded input sections
                 0x00000000       0x8c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_dump
                 0x00000000       0x34 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_time/time.c.obj
+ .text.sleep_until
+                0x00000000       0xc4 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_time/time.c.obj
  .text.sleep_us
                 0x00000000       0x24 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_time/time.c.obj
+ .text.sleep_ms
+                0x00000000       0x34 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.at_the_end_of_time
                 0x00000000        0x8 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.nil_time
@@ -331,6 +335,8 @@ Discarded input sections
                 0x00000000       0x54 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.busy_wait_ms
                 0x00000000       0x88 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .text.busy_wait_until
+                0x00000000       0x20 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_force_irq
                 0x00000000       0x3c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text          0x00000000        0x0 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_util/datetime.c.obj
@@ -420,8 +426,6 @@ Discarded input sections
                 0x00000000       0x2c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .text.clock_configure
                 0x00000000      0x118 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .text.clock_get_hz
-                0x00000000        0xc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .text.clock_set_reported_hz
                 0x00000000        0xc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .text.frequency_count_khz
@@ -583,8 +587,6 @@ Discarded input sections
                 0x00000000        0xc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .text.pop_r8_r11
                 0x00000000        0xc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .text.__wrap___aeabi_darithmetic
-                0x00000000       0x60 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .text.__wrap___aeabi_cdcmple
                 0x00000000       0x6c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .text.__wrap___aeabi_dcmpeq
@@ -601,8 +603,6 @@ Discarded input sections
                 0x00000000       0x1c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .text.__wrap___aeabi_ui2d
                 0x00000000       0x10 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .text.__wrap___aeabi_i2d
-                0x00000000       0x38 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .text.__wrap___aeabi_d2iz
                 0x00000000       0x48 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .text.double2int
@@ -632,8 +632,6 @@ Discarded input sections
  .text.double2fix
                 0x00000000       0x10 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .text.double2ufix
-                0x00000000       0x10 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .text.__wrap___aeabi_d2f
                 0x00000000       0x10 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .text.__wrap_srqt
                 0x00000000       0x10 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
@@ -734,11 +732,13 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
  .data          0x00000000        0x0 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
  .bss           0x00000000        0x0 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .text.__aeabi_lmul
+                0x00000000       0x32 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .ARM.attributes
+                0x00000000       0x22 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
  .text          0x00000000        0x0 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  .data          0x00000000        0x0 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  .bss           0x00000000        0x0 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .text.__wrap___aeabi_farithmetic
-                0x00000000       0x48 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  .text.__wrap___aeabi_cfcmple
                 0x00000000       0x50 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  .text.__wrap___aeabi_fcmpeq
@@ -753,10 +753,6 @@ Discarded input sections
                 0x00000000        0xa CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  .text.__wrap___aeabi_fcmpun
                 0x00000000       0x18 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .text.__wrap___aeabi_ui2f
-                0x00000000        0xa CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .text.__wrap___aeabi_i2f
-                0x00000000       0x44 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  .text.__wrap___aeabi_f2iz
                 0x00000000       0x4e CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  .text.float2int
@@ -764,8 +760,6 @@ Discarded input sections
  .text.float2fix
                 0x00000000        0xc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  .text.float2ufix
-                0x00000000        0xc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .text.__wrap___aeabi_f2uiz
                 0x00000000        0xc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  .text.fix2float
                 0x00000000        0xc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
@@ -1490,8 +1484,6 @@ Discarded input sections
                 0x00000000       0x20 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
  .text.pio_sm_is_claimed
                 0x00000000       0x20 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
- .text.pio_can_add_program
-                0x00000000       0x68 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
  .text.pio_can_add_program_at_offset
                 0x00000000       0x50 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
  .text.pio_add_program_at_offset
@@ -1508,9 +1500,9 @@ Discarded input sections
                 0x00000000       0xa4 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
  .text.pio_sm_drain_tx_fifo
                 0x00000000       0x40 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
- .text          0x00000000        0x0 C:\Users\xanda\AppData\Local\Temp\ccyyljGb.o
- .data          0x00000000        0x0 C:\Users\xanda\AppData\Local\Temp\ccyyljGb.o
- .bss           0x00000000        0x0 C:\Users\xanda\AppData\Local\Temp\ccyyljGb.o
+ .text          0x00000000        0x0 C:\Users\xanda\AppData\Local\Temp\cclLXTzi.o
+ .data          0x00000000        0x0 C:\Users\xanda\AppData\Local\Temp\cclLXTzi.o
+ .bss           0x00000000        0x0 C:\Users\xanda\AppData\Local\Temp\cclLXTzi.o
  .data          0x00000000        0x0 d:/dev/arm102~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .bss           0x00000000        0x0 d:/dev/arm102~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .text          0x00000000        0x0 d:/dev/arm102~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-calloc.o)
@@ -1726,11 +1718,11 @@ LOAD d:/dev/arm102~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none
 .boot2          0x10000000      0x100
                 0x10000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x10000000      0x100 C:\Users\xanda\AppData\Local\Temp\ccyyljGb.o
+ .boot2         0x10000000      0x100 C:\Users\xanda\AppData\Local\Temp\cclLXTzi.o
                 0x10000100                __boot2_end__ = .
                 0x00000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x10000100     0x2208
+.text           0x10000100     0x24b8
                 0x10000100                __logical_binary_start = .
  *(.vectors)
  .vectors       0x10000100       0xd4 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1791,227 +1783,259 @@ LOAD d:/dev/arm102~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none
                 0x100002b8                _init
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .text*)
  .text          0x100002bc       0x48 d:/dev/arm102~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .text.ir_rx_init
+                0x10000304      0x130 CMakeFiles/traffic_light_controller.dir/traffic_light_controller.c.obj
+                0x10000304                ir_rx_init
+ .text.light_tx_init
+                0x10000434       0xf4 CMakeFiles/traffic_light_controller.dir/traffic_light_controller.c.obj
+                0x10000434                light_tx_init
  .text.startup.main
-                0x10000304       0xc8 CMakeFiles/traffic_light_controller.dir/traffic_light_controller.c.obj
-                0x10000304                main
+                0x10000528       0xb4 CMakeFiles/traffic_light_controller.dir/traffic_light_controller.c.obj
+                0x10000528                main
  .text.gpio_set_function
-                0x100003cc       0x30 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x100003cc                gpio_set_function
+                0x100005dc       0x30 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x100005dc                gpio_set_function
+ .text.gpio_set_pulls
+                0x1000060c       0x30 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x1000060c                gpio_set_pulls
  .text.running_on_fpga
-                0x100003fc       0x10 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                0x100003fc                running_on_fpga
+                0x1000063c       0x10 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x1000063c                running_on_fpga
  .text.hw_claim_lock
-                0x1000040c       0x18 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x1000040c                hw_claim_lock
+                0x1000064c       0x18 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x1000064c                hw_claim_lock
  .text.hw_claim_unlock
-                0x10000424       0x14 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x10000424                hw_claim_unlock
+                0x10000664       0x14 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x10000664                hw_claim_unlock
  .text.hw_claim_or_assert
-                0x10000438       0x44 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x10000438                hw_claim_or_assert
+                0x10000678       0x44 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x10000678                hw_claim_or_assert
  .text.hw_claim_unused_from_range
-                0x1000047c       0x9c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x1000047c                hw_claim_unused_from_range
+                0x100006bc       0x9c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x100006bc                hw_claim_unused_from_range
  .text.spin_locks_reset
-                0x10000518       0x1c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x10000518                spin_locks_reset
+                0x10000758       0x1c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x10000758                spin_locks_reset
  .text.next_striped_spin_lock_num
-                0x10000534       0x18 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x10000534                next_striped_spin_lock_num
+                0x10000774       0x18 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x10000774                next_striped_spin_lock_num
  .text.irq_set_enabled
-                0x1000054c       0x24 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x1000054c                irq_set_enabled
+                0x1000078c       0x24 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x1000078c                irq_set_enabled
  .text.irq_get_vtable_handler
-                0x10000570       0x10 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000570                irq_get_vtable_handler
+                0x100007b0       0x10 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x100007b0                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x10000580       0x54 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000580                irq_set_exclusive_handler
+                0x100007c0       0x54 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x100007c0                irq_set_exclusive_handler
  .text.irq_remove_handler
-                0x100005d4      0x1b0 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x100005d4                irq_remove_handler
+                0x10000814      0x1b0 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000814                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x10000784       0xb4 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000784                irq_add_tail_to_free_list
+                0x100009c4       0xb4 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x100009c4                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x10000838       0x24 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000838                irq_init_priorities
+                0x10000a78       0x24 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000a78                irq_init_priorities
  .text.lock_init
-                0x1000085c       0x10 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x1000085c                lock_init
+                0x10000a9c       0x10 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x10000a9c                lock_init
  .text.mutex_init
-                0x1000086c       0x1c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x1000086c                mutex_init
+                0x10000aac       0x1c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x10000aac                mutex_init
  .text.recursive_mutex_init
-                0x10000888       0x1c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x10000888                recursive_mutex_init
+                0x10000ac8       0x1c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x10000ac8                recursive_mutex_init
  .text.timer_pool_entry_comparator
-                0x100008a4       0x34 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_time/time.c.obj
-                0x100008a4                timer_pool_entry_comparator
+                0x10000ae4       0x34 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000ae4                timer_pool_entry_comparator
  .text.sleep_until_callback
-                0x100008d8       0x30 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000b18       0x30 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_time/time.c.obj
  .text.add_alarm_under_lock.isra.0
-                0x10000908      0x100 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000b48      0x100 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x10000a08      0x1bc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000c48      0x1bc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x10000bc4       0x6c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_time/time.c.obj
-                0x10000bc4                alarm_pool_init_default
+                0x10000e04       0x6c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000e04                alarm_pool_init_default
  .text.alarm_pool_add_alarm_at
-                0x10000c30      0x178 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_time/time.c.obj
-                0x10000c30                alarm_pool_add_alarm_at
- .text.sleep_until
-                0x10000da8       0xc4 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_time/time.c.obj
-                0x10000da8                sleep_until
- .text.sleep_ms
-                0x10000e6c       0x34 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_time/time.c.obj
-                0x10000e6c                sleep_ms
+                0x10000e70      0x178 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000e70                alarm_pool_add_alarm_at
  .text.best_effort_wfe_or_timeout
-                0x10000ea0       0xd4 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_time/time.c.obj
-                0x10000ea0                best_effort_wfe_or_timeout
+                0x10000fe8       0xd4 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000fe8                best_effort_wfe_or_timeout
  .text.hardware_alarm_irq_handler
-                0x10000f74       0xbc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x100010bc       0xbc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x10001030       0x18 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001030                hardware_alarm_claim
+                0x10001178       0x18 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001178                hardware_alarm_claim
  .text.time_us_64
-                0x10001048       0x14 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001048                time_us_64
- .text.busy_wait_until
-                0x1000105c       0x20 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x1000105c                busy_wait_until
+                0x10001190       0x14 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001190                time_us_64
  .text.hardware_alarm_set_callback
-                0x1000107c       0x8c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x1000107c                hardware_alarm_set_callback
+                0x100011a4       0x8c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x100011a4                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x10001108       0xd4 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001108                hardware_alarm_set_target
+                0x10001230       0xd4 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001230                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x100011dc       0x3c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x100011dc                hardware_alarm_cancel
+                0x10001304       0x3c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001304                hardware_alarm_cancel
  .text.ph_merge_nodes
-                0x10001218       0x68 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001340       0x68 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_post_alloc_init
-                0x10001280       0x3c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001280                ph_post_alloc_init
+                0x100013a8       0x3c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x100013a8                ph_post_alloc_init
  .text.ph_merge_two_pass
-                0x100012bc       0x90 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x100012bc                ph_merge_two_pass
+                0x100013e4       0x90 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x100013e4                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x1000134c      0x100 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001474      0x100 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x1000144c      0x104 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x1000144c                ph_remove_head
+                0x10001574      0x104 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001574                ph_remove_head
  .text.ph_remove_and_free_node
-                0x10001550       0x7c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001550                ph_remove_and_free_node
+                0x10001678       0x7c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001678                ph_remove_and_free_node
  .text.clocks_init
-                0x100015cc      0x2d0 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x100015cc                clocks_init
+                0x100016f4      0x2d0 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x100016f4                clocks_init
+ .text.clock_get_hz
+                0x100019c4        0xc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x100019c4                clock_get_hz
  .text.pll_init
-                0x1000189c       0xa0 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x1000189c                pll_init
+                0x100019d0       0xa0 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x100019d0                pll_init
  .text.watchdog_start_tick
-                0x1000193c       0x10 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x1000193c                watchdog_start_tick
+                0x10001a70       0x10 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x10001a70                watchdog_start_tick
  .text.xosc_init
-                0x1000194c       0x28 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x1000194c                xosc_init
+                0x10001a80       0x28 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x10001a80                xosc_init
  .text.runtime_init
-                0x10001974       0xf0 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001974                runtime_init
- .text._exit    0x10001a64        0x4 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001a64                _exit
- .text.exit     0x10001a68        0x8 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001a68                exit
- .text.panic    0x10001a70       0x30 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001a70                panic
+                0x10001aa8       0xf0 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10001aa8                runtime_init
+ .text._exit    0x10001b98        0x4 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10001b98                _exit
+ .text.exit     0x10001b9c        0x8 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10001b9c                exit
+ .text.panic    0x10001ba4       0x30 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10001ba4                panic
  .text.hard_assertion_failure
-                0x10001aa0        0xc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001aa0                hard_assertion_failure
+                0x10001bd4        0xc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10001bd4                hard_assertion_failure
  .text._out_char
-                0x10001aac       0x10 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10001be0       0x10 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.weak_raw_vprintf
-                0x10001abc       0x30 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x10001abc                weak_raw_vprintf
- .text          0x10001aec       0x10 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x10001bf0       0x30 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10001bf0                weak_raw_vprintf
+ .text          0x10001c20       0x10 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x10001afc       0x10 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10001afc                rom_func_lookup
+                0x10001c30       0x10 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10001c30                rom_func_lookup
  .text.rom_data_lookup
-                0x10001b0c       0x10 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10001b0c                rom_data_lookup
+                0x10001c40       0x10 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10001c40                rom_data_lookup
  .text.rom_funcs_lookup
-                0x10001b1c       0x44 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10001b1c                rom_funcs_lookup
+                0x10001c50       0x44 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10001c50                rom_funcs_lookup
  .text.__wrap___aeabi_uidiv
-                0x10001b60       0x4c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x10001b60                __wrap___aeabi_uidiv
-                0x10001b60                __wrap___aeabi_uidivmod
-                0x10001b60                div_u32u32
-                0x10001b60                divmod_u32u32
-                0x10001b68                divmod_u32u32_unsafe
-                0x10001b90                divmod_u32u32_savestate
+                0x10001c94       0x4c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x10001c94                __wrap___aeabi_uidiv
+                0x10001c94                __wrap___aeabi_uidivmod
+                0x10001c94                div_u32u32
+                0x10001c94                divmod_u32u32
+                0x10001c9c                divmod_u32u32_unsafe
+                0x10001cc4                divmod_u32u32_savestate
+ .text.__wrap___aeabi_darithmetic
+                0x10001ce0       0x60 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10001ce0                __wrap___aeabi_drsub
+                0x10001ce6                __wrap___aeabi_dsub
+                0x10001cf0                __wrap___aeabi_dadd
+                0x10001cfa                __wrap___aeabi_ddiv
+                0x10001d2e                __wrap___aeabi_dmul
+ .text.__wrap___aeabi_i2d
+                0x10001d40       0x38 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10001d40                __wrap___aeabi_ui2d
+                0x10001d48                __wrap___aeabi_i2d
+ .text.__wrap___aeabi_d2f
+                0x10001d78       0x10 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10001d78                __wrap___aeabi_d2f
  .text.missing_double_func_shim
-                0x10001bac        0xc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x10001d88        0xc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
  .text.__aeabi_double_init
-                0x10001bb8       0x98 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x10001bb8                __aeabi_double_init
+                0x10001d94       0x98 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x10001d94                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x10001c50       0x2c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10001c50                double_table_shim_on_use_helper
- .text.__aeabi_lmul
-                0x10001c7c       0x32 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-                0x10001c7c                __wrap___aeabi_lmul
- *fill*         0x10001cae        0x2 
+                0x10001e2c       0x2c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10001e2c                double_table_shim_on_use_helper
+ .text.__wrap___aeabi_farithmetic
+                0x10001e58       0x48 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x10001e58                __wrap___aeabi_frsub
+                0x10001e5e                __wrap___aeabi_fsub
+                0x10001e64                __wrap___aeabi_fadd
+                0x10001e6a                __wrap___aeabi_fdiv
+                0x10001e92                __wrap___aeabi_fmul
+ .text.__wrap___aeabi_ui2f
+                0x10001ea0        0xa CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x10001ea0                __wrap___aeabi_ui2f
+ *fill*         0x10001eaa        0x2 
+ .text.__wrap___aeabi_i2f
+                0x10001eac       0x44 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x10001eac                __wrap___aeabi_i2f
+ .text.__wrap___aeabi_f2uiz
+                0x10001ef0        0xc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x10001ef0                __wrap___aeabi_f2uiz
  .text.missing_float_func_shim
-                0x10001cb0        0xc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x10001efc        0xc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
  .text.__aeabi_float_init
-                0x10001cbc       0x5c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x10001cbc                __aeabi_float_init
- .text          0x10001d18       0x10 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x10001d18                __aeabi_mem_init
- .text.memset   0x10001d28        0xc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x10001d28                __wrap_memset
- .text.memcpy   0x10001d34        0xc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x10001d34                __wrap_memcpy
-                0x10001d34                __wrap___aeabi_memcpy
+                0x10001f08       0x5c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x10001f08                __aeabi_float_init
+ .text          0x10001f64       0x10 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x10001f64                __aeabi_mem_init
+ .text.memset   0x10001f74        0xc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x10001f74                __wrap_memset
+ .text.memcpy   0x10001f80        0xc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x10001f80                __wrap_memcpy
+                0x10001f80                __wrap___aeabi_memcpy
  .text.stdio_out_chars_no_crlf
-                0x10001d40       0x10 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10001f8c       0x10 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_out_chars_crlf
-                0x10001d50       0xb4 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10001f9c       0xb4 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_put_string.isra.0
-                0x10001e04       0xfc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10002050       0xfc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_putchar
-                0x10001f00       0x98 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10001f00                __wrap_putchar
+                0x1000214c       0x98 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x1000214c                __wrap_putchar
  .text.__wrap_puts
-                0x10001f98       0x3c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10001f98                __wrap_puts
+                0x100021e4       0x3c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100021e4                __wrap_puts
  .text.startup._retrieve_unique_id_on_boot
-                0x10001fd4       0x10 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x10002220       0x10 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .text.flash_get_unique_id
-                0x10001fe4       0x40 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-                0x10001fe4                flash_get_unique_id
+                0x10002230       0x40 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x10002230                flash_get_unique_id
  .text.pio_claim_unused_sm
-                0x10002024       0x3c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-                0x10002024                pio_claim_unused_sm
+                0x10002270       0x3c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x10002270                pio_claim_unused_sm
+ .text.pio_can_add_program
+                0x100022ac       0x68 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x100022ac                pio_can_add_program
  .text.pio_add_program
-                0x10002060       0xc8 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-                0x10002060                pio_add_program
+                0x10002314       0xc8 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x10002314                pio_add_program
  .text.pio_sm_set_consecutive_pindirs
-                0x10002128       0xb0 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-                0x10002128                pio_sm_set_consecutive_pindirs
+                0x100023dc       0xb0 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x100023dc                pio_sm_set_consecutive_pindirs
  .text.pio_sm_init
-                0x100021d8       0x8c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-                0x100021d8                pio_sm_init
- .text.strlen   0x10002264       0x5c d:/dev/arm102~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strlen-stub.o)
-                0x10002264                strlen
+                0x1000248c       0x8c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x1000248c                pio_sm_init
+ .text.strlen   0x10002518       0x5c d:/dev/arm102~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strlen-stub.o)
+                0x10002518                strlen
  *(.fini)
- .fini          0x100022c0        0x4 d:/dev/arm102~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
-                0x100022c0                _fini
- *fill*         0x100022c4        0x4 
- .fini.__stub   0x100022c8       0x40 linker stubs
+ .fini          0x10002574        0x4 d:/dev/arm102~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x10002574                _fini
+ .fini.__stub   0x10002578       0x40 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -2023,101 +2047,103 @@ LOAD d:/dev/arm102~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x10002308        0x0 d:/dev/arm102~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x10002308                . = ALIGN (0x4)
+ .eh_frame      0x100025b8        0x0 d:/dev/arm102~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x100025b8                . = ALIGN (0x4)
 
-.glue_7         0x10002308        0x0
- .glue_7        0x10002308        0x0 linker stubs
+.glue_7         0x100025b8        0x0
+ .glue_7        0x100025b8        0x0 linker stubs
 
-.glue_7t        0x10002308        0x0
- .glue_7t       0x10002308        0x0 linker stubs
+.glue_7t        0x100025b8        0x0
+ .glue_7t       0x100025b8        0x0 linker stubs
 
-.vfp11_veneer   0x10002308        0x0
- .vfp11_veneer  0x10002308        0x0 linker stubs
+.vfp11_veneer   0x100025b8        0x0
+ .vfp11_veneer  0x100025b8        0x0 linker stubs
 
-.v4_bx          0x10002308        0x0
- .v4_bx         0x10002308        0x0 linker stubs
+.v4_bx          0x100025b8        0x0
+ .v4_bx         0x100025b8        0x0 linker stubs
 
-.iplt           0x10002308        0x0
- .iplt          0x10002308        0x0 d:/dev/arm102~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x100025b8        0x0
+ .iplt          0x100025b8        0x0 d:/dev/arm102~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x10002308      0x138
+.rodata         0x100025b8      0x148
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
+ .rodata.ir_receiver_program
+                0x100025b8        0x6 CMakeFiles/traffic_light_controller.dir/traffic_light_controller.c.obj
+ *fill*         0x100025be        0x2 
+ .rodata.ir_receiver_program_instructions
+                0x100025c0       0x12 CMakeFiles/traffic_light_controller.dir/traffic_light_controller.c.obj
+ *fill*         0x100025d2        0x2 
  .rodata.light_controller_program
-                0x10002308        0x6 CMakeFiles/traffic_light_controller.dir/traffic_light_controller.c.obj
- *fill*         0x1000230e        0x2 
+                0x100025d4        0x6 CMakeFiles/traffic_light_controller.dir/traffic_light_controller.c.obj
+ *fill*         0x100025da        0x2 
  .rodata.light_controller_program_instructions
-                0x10002310        0x6 CMakeFiles/traffic_light_controller.dir/traffic_light_controller.c.obj
- *fill*         0x10002316        0x2 
+                0x100025dc        0x6 CMakeFiles/traffic_light_controller.dir/traffic_light_controller.c.obj
+ *fill*         0x100025e2        0x2 
  .rodata.hardware_alarm_claim.str1.4
-                0x10002318       0x22 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x1000233a        0x2 
+                0x100025e4       0x22 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x10002606        0x2 
  .rodata.panic.str1.4
-                0x1000233c       0x12 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x1000234e        0x2 
+                0x10002608       0x12 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x1000261a        0x2 
  .rodata.hard_assertion_failure.str1.4
-                0x10002350        0xc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x1000261c        0xc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata.missing_double_func_shim.str1.4
-                0x1000235c       0x18 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x10002628       0x18 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
  .rodata.missing_float_func_shim.str1.4
-                0x10002374       0x18 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x10002640       0x18 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
                                   0x1 (size before relaxing)
  .rodata.str1.4
-                0x10002374       0x60 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10002640       0x60 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_44
-                0x100023d4        0xc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .rodata.__bi_56
-                0x100023e0        0xc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100026a0        0xc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x100023ec        0xc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100026ac        0xc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x100023f8        0xc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100026b8        0xc CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.crlf_str.0
-                0x10002404        0x2 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x10002406        0x2 
+                0x100026c4        0x2 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x100026c6        0x2 
  .rodata.pio_claim_unused_sm.str1.4
-                0x10002408       0x24 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x100026c8       0x24 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
  .rodata.pio_add_program.str1.4
-                0x1000242c       0x11 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-                0x10002440                . = ALIGN (0x4)
- *fill*         0x1000243d        0x3 
+                0x100026ec       0x11 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x10002700                . = ALIGN (0x4)
+ *fill*         0x100026fd        0x3 
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x10002440                . = ALIGN (0x4)
+                0x10002700                . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x10002440                __exidx_start = .
+                0x10002700                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x10002440                __exidx_end = .
-                0x10002440                . = ALIGN (0x4)
-                0x10002440                __binary_info_start = .
+                0x10002700                __exidx_end = .
+                0x10002700                . = ALIGN (0x4)
+                0x10002700                __binary_info_start = .
 
-.binary_info    0x10002440       0x20
+.binary_info    0x10002700       0x1c
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr22
-                0x10002440        0x4 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10002700        0x4 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr30
-                0x10002444        0x4 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10002704        0x4 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr38
-                0x10002448        0x4 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10002708        0x4 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr44
-                0x1000244c        0x4 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x1000270c        0x4 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr50
-                0x10002450        0x4 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr56
-                0x10002454        0x4 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10002710        0x4 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr75
-                0x10002458        0x4 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10002714        0x4 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr81
-                0x1000245c        0x4 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10002718        0x4 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
-                0x10002460                __binary_info_end = .
+                0x1000271c                __binary_info_end = .
 
-.rel.dyn        0x10002460        0x0
- .rel.iplt      0x10002460        0x0 d:/dev/arm102~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x10002460                . = ALIGN (0x4)
+.rel.dyn        0x1000271c        0x0
+ .rel.iplt      0x1000271c        0x0 d:/dev/arm102~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x1000271c                . = ALIGN (0x4)
 
 .ram_vector_table
                 0x20000000       0xc0
@@ -2126,7 +2152,7 @@ LOAD d:/dev/arm102~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none
                 0x20000000       0xc0 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x20000000                ram_vector_table
 
-.data           0x200000c0      0x2d0 load address 0x10002460
+.data           0x200000c0      0x2d0 load address 0x1000271c
                 0x200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -2211,29 +2237,29 @@ LOAD d:/dev/arm102~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none
  *(.jcr)
                 0x20000390                . = ALIGN (0x4)
                 0x20000390                __data_end__ = .
-                0x10002460                __etext = LOADADDR (.data)
+                0x1000271c                __etext = LOADADDR (.data)
 
-.igot.plt       0x20000390        0x0 load address 0x10002730
+.igot.plt       0x20000390        0x0 load address 0x100029ec
  .igot.plt      0x20000390        0x0 d:/dev/arm102~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x20000390        0x0 load address 0x10002730
+                0x20000390        0x0 load address 0x100029ec
                 0x20000390                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x20040000        0x0 load address 0x10002730
+.scratch_x      0x20040000        0x0 load address 0x100029ec
                 0x20040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20040000                . = ALIGN (0x4)
                 0x20040000                __scratch_x_end__ = .
-                0x10002730                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x100029ec                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20041000        0x0 load address 0x10002730
+.scratch_y      0x20041000        0x0 load address 0x100029ec
                 0x20041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20041000                . = ALIGN (0x4)
                 0x20041000                __scratch_y_end__ = .
-                0x10002730                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x100029ec                __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .bss            0x20000390      0x4e0
                 0x20000390                . = ALIGN (0x4)
@@ -2299,8 +2325,8 @@ LOAD d:/dev/arm102~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none
  *(.stack*)
  .stack         0x20041000      0x800 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x10002730        0x0
-                0x10002730                PROVIDE (__flash_binary_end = .)
+.flash_end      0x100029ec        0x0
+                0x100029ec                PROVIDE (__flash_binary_end = .)
                 0x20040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -2380,7 +2406,7 @@ LOAD CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/lib/tinyusb/src/tus
 LOAD CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 LOAD CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 LOAD CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-LOAD C:\Users\xanda\AppData\Local\Temp\ccyyljGb.o
+LOAD C:\Users\xanda\AppData\Local\Temp\cclLXTzi.o
 LOAD d:/dev/arm102~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libstdc++.a
 LOAD d:/dev/arm102~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a
 START GROUP
@@ -2452,31 +2478,29 @@ LOAD linker stubs
  .ARM.attributes
                 0x00000416       0x22 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .ARM.attributes
-                0x00000438       0x22 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                0x00000438       0x22 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  .ARM.attributes
-                0x0000045a       0x22 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x0000045a       0x2c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
  .ARM.attributes
-                0x0000047c       0x2c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x00000486       0x22 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
  .ARM.attributes
-                0x000004a8       0x22 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x000004a8       0x22 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
  .ARM.attributes
-                0x000004ca       0x22 CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+                0x000004ca       0x2c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .ARM.attributes
-                0x000004ec       0x2c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000004f6       0x2c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .ARM.attributes
-                0x00000518       0x2c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000522       0x2c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .ARM.attributes
-                0x00000544       0x2c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000054e       0x2c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
  .ARM.attributes
-                0x00000570       0x2c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x0000057a       0x2c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
  .ARM.attributes
-                0x0000059c       0x2c CMakeFiles/traffic_light_controller.dir/D_/dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x000005a6       0x22 C:\Users\xanda\AppData\Local\Temp\cclLXTzi.o
  .ARM.attributes
-                0x000005c8       0x22 C:\Users\xanda\AppData\Local\Temp\ccyyljGb.o
+                0x000005c8       0x1e d:/dev/arm102~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .ARM.attributes
-                0x000005ea       0x1e d:/dev/arm102~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
- .ARM.attributes
-                0x00000608       0x2c d:/dev/arm102~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strlen-stub.o)
+                0x000005e6       0x2c d:/dev/arm102~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strlen-stub.o)
 
 .comment        0x00000000       0x49
  .comment       0x00000000       0x49 CMakeFiles/traffic_light_controller.dir/traffic_light_controller.c.obj

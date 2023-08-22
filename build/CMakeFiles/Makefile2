@@ -64,6 +64,7 @@ preinstall: pico-sdk\preinstall
 # The main recursive "clean" target.
 clean: CMakeFiles\traffic_light_controller.dir\clean
 clean: CMakeFiles\traffic_light_controller_light_controller_pio_h.dir\clean
+clean: CMakeFiles\traffic_light_controller_ir_receiver_pio_h.dir\clean
 clean: CMakeFiles\ELF2UF2Build.dir\clean
 clean: pico-sdk\clean
 .PHONY : clean
@@ -1493,8 +1494,9 @@ pico-sdk\tools\clean:
 # Target rules for target CMakeFiles/traffic_light_controller.dir
 
 # All Build rule for target.
-CMakeFiles\traffic_light_controller.dir\all: CMakeFiles\traffic_light_controller_light_controller_pio_h.dir\all
 CMakeFiles\traffic_light_controller.dir\all: CMakeFiles\ELF2UF2Build.dir\all
+CMakeFiles\traffic_light_controller.dir\all: CMakeFiles\traffic_light_controller_light_controller_pio_h.dir\all
+CMakeFiles\traffic_light_controller.dir\all: CMakeFiles\traffic_light_controller_ir_receiver_pio_h.dir\all
 CMakeFiles\traffic_light_controller.dir\all: pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\traffic_light_controller.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\traffic_light_controller.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\traffic_light_controller.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\traffic_light_controller.dir\build
@@ -1503,7 +1505,7 @@ CMakeFiles\traffic_light_controller.dir\all: pico-sdk\src\rp2_common\boot_stage2
 
 # Build rule for subdir invocation for target.
 CMakeFiles\traffic_light_controller.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\Pico\TrafficLightController\build\CMakeFiles 93
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\Pico\TrafficLightController\build\CMakeFiles 94
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\traffic_light_controller.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\Pico\TrafficLightController\build\CMakeFiles 0
 .PHONY : CMakeFiles\traffic_light_controller.dir\rule
@@ -1524,7 +1526,7 @@ CMakeFiles\traffic_light_controller.dir\clean:
 CMakeFiles\traffic_light_controller_light_controller_pio_h.dir\all: pico-sdk\src\rp2_common\tinyusb\CMakeFiles\PioasmBuild.dir\all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\traffic_light_controller_light_controller_pio_h.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\traffic_light_controller_light_controller_pio_h.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\traffic_light_controller_light_controller_pio_h.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\traffic_light_controller_light_controller_pio_h.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Projects\Pico\TrafficLightController\build\CMakeFiles --progress-num=97 "Built target traffic_light_controller_light_controller_pio_h"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Projects\Pico\TrafficLightController\build\CMakeFiles --progress-num=98 "Built target traffic_light_controller_light_controller_pio_h"
 .PHONY : CMakeFiles\traffic_light_controller_light_controller_pio_h.dir\all
 
 # Build rule for subdir invocation for target.
@@ -1542,6 +1544,32 @@ traffic_light_controller_light_controller_pio_h: CMakeFiles\traffic_light_contro
 CMakeFiles\traffic_light_controller_light_controller_pio_h.dir\clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\traffic_light_controller_light_controller_pio_h.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\traffic_light_controller_light_controller_pio_h.dir\clean
 .PHONY : CMakeFiles\traffic_light_controller_light_controller_pio_h.dir\clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/traffic_light_controller_ir_receiver_pio_h.dir
+
+# All Build rule for target.
+CMakeFiles\traffic_light_controller_ir_receiver_pio_h.dir\all: pico-sdk\src\rp2_common\tinyusb\CMakeFiles\PioasmBuild.dir\all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\traffic_light_controller_ir_receiver_pio_h.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\traffic_light_controller_ir_receiver_pio_h.dir\depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\traffic_light_controller_ir_receiver_pio_h.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\traffic_light_controller_ir_receiver_pio_h.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Projects\Pico\TrafficLightController\build\CMakeFiles --progress-num=97 "Built target traffic_light_controller_ir_receiver_pio_h"
+.PHONY : CMakeFiles\traffic_light_controller_ir_receiver_pio_h.dir\all
+
+# Build rule for subdir invocation for target.
+CMakeFiles\traffic_light_controller_ir_receiver_pio_h.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\Pico\TrafficLightController\build\CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\traffic_light_controller_ir_receiver_pio_h.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\Pico\TrafficLightController\build\CMakeFiles 0
+.PHONY : CMakeFiles\traffic_light_controller_ir_receiver_pio_h.dir\rule
+
+# Convenience name for target.
+traffic_light_controller_ir_receiver_pio_h: CMakeFiles\traffic_light_controller_ir_receiver_pio_h.dir\rule
+.PHONY : traffic_light_controller_ir_receiver_pio_h
+
+# clean rule for target.
+CMakeFiles\traffic_light_controller_ir_receiver_pio_h.dir\clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\traffic_light_controller_ir_receiver_pio_h.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\traffic_light_controller_ir_receiver_pio_h.dir\clean
+.PHONY : CMakeFiles\traffic_light_controller_ir_receiver_pio_h.dir\clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/ELF2UF2Build.dir

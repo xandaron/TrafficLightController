@@ -2,34 +2,50 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "hardware/pio.h"
+#include "hardware/clocks.h"
 
-// PIO program
+#include "ir_receiver.h"
+#include "light_controller.h"
+
+// PIO programs
 #include "light_controller.pio.h"
-
+#include "ir_receiver.pio.h"
 
 int main()
 {
-    // Choose which PIO instance to use (there are two instances)
-    PIO pio = pio0;
-    
-    // Our assembled program needs to be loaded into this PIO's instruction
-    // memory. This SDK function will find a location (offset) in the
-    // instruction memory where there is enough space for our program. We need
-    // to remember this location!
-    uint offset = pio_add_program(pio, &light_controller_program);
+    PIO rx_pio = pio0;
+    uint rx_gpio = 9;
+    int rx_sm = ir_rx_init(rx_pio, rx_gpio);
 
-    // Find a free state machine on our chosen PIO (erroring if there are
-    // none). Configure it to run our program, and start it, using the
-    // helper function we included in our .pio file.
-    uint sm = pio_claim_unused_sm(pio, true);
-    light_controller_program_init(pio, sm, offset, 0, 3);
-    // The state machine is now running. Any value we push to its TX FIFO will
-    // appear on the LED pin.
-    while (true) {
-        for (uint i = 0; i < 8; i++)
-        {
-            pio_sm_put_blocking(pio, sm, i);
-            sleep_ms(500);
+    PIO light_pio = pio1;
+    int light_sm = light_tx_init(light_pio, 0);
+
+    uint mode = 0;
+    uint control = 0b000;
+
+    uint8_t rx_address, rx_data;
+    while (true) 
+    {
+        while (!pio_sm_is_rx_fifo_empty(rx_pio, rx_sm)) {
+            uint32_t rx_frame = pio_sm_get(rx_pio, rx_sm);
+
+            if (ir_decode_frame(rx_frame, &rx_address, &rx_data)) {
+                switch (rx_data)
+                {
+                case 0x19:
+                    control ^= 0b001;
+                    break;
+                case 0x1b:
+                    control ^= 0b100;
+                    break;
+                case 0x11:
+                    control ^= 0b010;
+                    break;
+                default:
+                    break;
+                }
+            }
         }
+        light_tx(light_pio, light_sm, control);
     }
 }

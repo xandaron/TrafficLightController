@@ -1,6 +1,7 @@
 # Hashes of file build rules.
 6c622caffc3a449a7dbaa1e48cd4c70d CMakeFiles/ELF2UF2Build
 0018e060dce2dc7851f96fb632842dc0 CMakeFiles/ELF2UF2Build-complete
+6c622caffc3a449a7dbaa1e48cd4c70d CMakeFiles/traffic_light_controller_ir_receiver_pio_h
 6c622caffc3a449a7dbaa1e48cd4c70d CMakeFiles/traffic_light_controller_light_controller_pio_h
 f213940f139fb9ac1915e5c0f6860508 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build
 b0bb7c5626d8442ed80bcf319d1a87da elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
@@ -9,6 +10,7 @@ b0758a7452b57d121f163f17be18b003 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-dow
 b7ad4eac8697c5517868b749fc8fdd85 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir
 c223f70d1ed83a55ea33779bc0ff4c95 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch
 d8e0c398c7ee2c528b68393b0081e663 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update
+d91c0242fc169df32a2c4611c67b4e4a ir_receiver.pio.h
 83d0084b6aa9607ccaca8724081ad02c light_controller.pio.h
 15ffb46950ada8d30c7850d6974d4353 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin
 15ffb46950ada8d30c7850d6974d4353 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm
