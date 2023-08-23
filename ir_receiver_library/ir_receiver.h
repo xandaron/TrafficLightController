@@ -9,5 +9,7 @@
 
 // public API
 
-int ir_rx_init(PIO pio, uint pin);
+void ir_rx_init(PIO pio, uint pin);
 bool ir_decode_frame(uint32_t sm, uint8_t *p_address, uint8_t *p_data);
+bool is_rx_fifo_empty();
+uint32_t ir_get();

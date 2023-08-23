@@ -63,8 +63,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/Projects/Pico/TrafficLightController/build/pioasm/CMakeFiles/CMakeScratch/TryCompile-q6w4f4"
-      binary: "D:/Projects/Pico/TrafficLightController/build/pioasm/CMakeFiles/CMakeScratch/TryCompile-q6w4f4"
+      source: "D:/Projects/Pico/TrafficLightController/build/pioasm/CMakeFiles/CMakeScratch/TryCompile-6ijbjg"
+      binary: "D:/Projects/Pico/TrafficLightController/build/pioasm/CMakeFiles/CMakeScratch/TryCompile-6ijbjg"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
@@ -72,28 +72,28 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Projects/Pico/TrafficLightController/build/pioasm/CMakeFiles/CMakeScratch/TryCompile-q6w4f4'
+        Change Dir: 'D:/Projects/Pico/TrafficLightController/build/pioasm/CMakeFiles/CMakeScratch/TryCompile-6ijbjg'
         
-        Run Build Command(s): D:/dev/CMake/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_dfaac\\fast
-        	"D:\\dev\\Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX86\\x86\\nmake.exe"  -f CMakeFiles\\cmTC_dfaac.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_dfaac.dir\\build
-        Building CXX object CMakeFiles/cmTC_dfaac.dir/CMakeCXXCompilerABI.cpp.obj
-        	D:\\dev\\CMake\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_dfaac.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir=D:\\Projects\\Pico\\TrafficLightController\\build\\pioasm\\CMakeFiles\\CMakeScratch\\TryCompile-q6w4f4 --filter-prefix="Note: including file: " -- D:\\dev\\VISUAL~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe @C:\\Users\\xanda\\AppData\\Local\\Temp\\nm25FA.tmp
+        Run Build Command(s): D:/dev/CMake/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_4db24\\fast
+        	"D:\\dev\\Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX86\\x86\\nmake.exe"  -f CMakeFiles\\cmTC_4db24.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_4db24.dir\\build
+        Building CXX object CMakeFiles/cmTC_4db24.dir/CMakeCXXCompilerABI.cpp.obj
+        	D:\\dev\\CMake\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_4db24.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir=D:\\Projects\\Pico\\TrafficLightController\\build\\pioasm\\CMakeFiles\\CMakeScratch\\TryCompile-6ijbjg --filter-prefix="Note: including file: " -- D:\\dev\\VISUAL~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe @C:\\Users\\xanda\\AppData\\Local\\Temp\\nm9542.tmp
         CMakeCXXCompilerABI.cpp
-        Linking CXX executable cmTC_dfaac.exe
-        	D:\\dev\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_dfaac.dir --rc=D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\rc.exe --mt=D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\mt.exe --manifests -- D:\\dev\\VISUAL~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_dfaac.dir\\objects1.rsp @C:\\Users\\xanda\\AppData\\Local\\Temp\\nm27C1.tmp
+        Linking CXX executable cmTC_4db24.exe
+        	D:\\dev\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_4db24.dir --rc=D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\rc.exe --mt=D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\mt.exe --manifests -- D:\\dev\\VISUAL~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_4db24.dir\\objects1.rsp @C:\\Users\\xanda\\AppData\\Local\\Temp\\nm9870.tmp
         Visual Studio Incremental Link with embedded manifests
-        Create CMakeFiles\\cmTC_dfaac.dir/manifest.rc
-        Create empty: CMakeFiles\\cmTC_dfaac.dir/embed.manifest
+        Create CMakeFiles\\cmTC_4db24.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_4db24.dir/embed.manifest
         RC Pass 1:
-        D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_dfaac.dir/manifest.res CMakeFiles\\cmTC_dfaac.dir/manifest.rc
+        D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_4db24.dir/manifest.res CMakeFiles\\cmTC_4db24.dir/manifest.rc
         LINK Pass 1:
-        D:\\dev\\VISUAL~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_dfaac.dir\\objects1.rsp /out:cmTC_dfaac.exe /implib:cmTC_dfaac.lib /pdb:D:\\Projects\\Pico\\TrafficLightController\\build\\pioasm\\CMakeFiles\\CMakeScratch\\TryCompile-q6w4f4\\cmTC_dfaac.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_dfaac.dir/intermediate.manifest CMakeFiles\\cmTC_dfaac.dir/manifest.res
+        D:\\dev\\VISUAL~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_4db24.dir\\objects1.rsp /out:cmTC_4db24.exe /implib:cmTC_4db24.lib /pdb:D:\\Projects\\Pico\\TrafficLightController\\build\\pioasm\\CMakeFiles\\CMakeScratch\\TryCompile-6ijbjg\\cmTC_4db24.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_4db24.dir/intermediate.manifest CMakeFiles\\cmTC_4db24.dir/manifest.res
         MT:
-        D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\mt.exe /nologo /manifest CMakeFiles\\cmTC_dfaac.dir/intermediate.manifest /out:CMakeFiles\\cmTC_dfaac.dir/embed.manifest /notify_update
+        D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\mt.exe /nologo /manifest CMakeFiles\\cmTC_4db24.dir/intermediate.manifest /out:CMakeFiles\\cmTC_4db24.dir/embed.manifest /notify_update
         RC Pass 2:
-        D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_dfaac.dir/manifest.res CMakeFiles\\cmTC_dfaac.dir/manifest.rc
+        D:\\WINDOW~1\\10\\bin\\100226~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_4db24.dir/manifest.res CMakeFiles\\cmTC_4db24.dir/manifest.rc
         FINAL LINK:
-        D:\\dev\\VISUAL~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_dfaac.dir\\objects1.rsp /out:cmTC_dfaac.exe /implib:cmTC_dfaac.lib /pdb:D:\\Projects\\Pico\\TrafficLightController\\build\\pioasm\\CMakeFiles\\CMakeScratch\\TryCompile-q6w4f4\\cmTC_dfaac.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_dfaac.dir/intermediate.manifest CMakeFiles\\cmTC_dfaac.dir/manifest.res
+        D:\\dev\\VISUAL~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_4db24.dir\\objects1.rsp /out:cmTC_4db24.exe /implib:cmTC_4db24.lib /pdb:D:\\Projects\\Pico\\TrafficLightController\\build\\pioasm\\CMakeFiles\\CMakeScratch\\TryCompile-6ijbjg\\cmTC_4db24.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_4db24.dir/intermediate.manifest CMakeFiles\\cmTC_4db24.dir/manifest.res
         
       exitCode: 0
 ...

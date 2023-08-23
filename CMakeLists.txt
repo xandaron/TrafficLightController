@@ -23,7 +23,7 @@ project(traffic_light_controller C CXX ASM)
 # Initialise the Raspberry Pi Pico SDK
 pico_sdk_init()
 
-add_subdirectory(light_controller_library)
 add_subdirectory(ir_receiver_library)
+add_subdirectory(light_controller_library)
 
 add_subdirectory(traffic_light_controller)

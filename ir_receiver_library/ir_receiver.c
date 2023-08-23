@@ -15,35 +15,30 @@
 // import the assembled PIO state machine program
 #include "ir_receiver.pio.h"
 
+PIO rx_pio;
+uint rx_gpio;
+int rx_sm;
+
 // Claim an unused state machine on the specified PIO and configure it
 // to receive NEC IR frames on the given GPIO pin.
 //
 // Returns: the state machine number on success, otherwise -1
-int ir_rx_init(PIO pio, uint pin_num) {
+void ir_rx_init(PIO pio, uint pin_num) {
 
+    rx_pio = pio;
+    rx_gpio = pin_num;
     // disable pull-up and pull-down on gpio pin
-    gpio_disable_pulls(pin_num);
+    gpio_disable_pulls(rx_gpio);
 
     // install the program in the PIO shared instruction space
-    uint offset;
-    if (pio_can_add_program(pio, &ir_receiver_program)) {
-        offset = pio_add_program(pio, &ir_receiver_program);
-    } else {
-        return -1;      // the program could not be added
-    }
+    uint offset = pio_add_program(rx_pio, &ir_receiver_program);
 
     // claim an unused state machine on this PIO
-    int sm = pio_claim_unused_sm(pio, true);
-    if (sm == -1) {
-        return -1;      // we were unable to claim a state machine
-    }
+    rx_sm = pio_claim_unused_sm(rx_pio, true);
 
     // configure and enable the state machine
-    ir_receiver_program_init(pio, sm, offset, pin_num);
-
-    return sm;
+    ir_receiver_program_init(rx_pio, rx_sm, offset, rx_gpio);
 }
-
 
 // Validate a 32-bit frame and store the address and data at the locations
 // provided.
@@ -77,4 +72,12 @@ bool ir_decode_frame(uint32_t frame, uint8_t *p_address, uint8_t *p_data) {
     *p_data = f.data;
 
     return true;
+}
+
+bool is_rx_fifo_empty() {
+    return pio_sm_is_rx_fifo_empty(rx_pio, rx_sm);
+}
+
+uint32_t ir_get() {
+    return pio_sm_get(rx_pio, rx_sm);
 }

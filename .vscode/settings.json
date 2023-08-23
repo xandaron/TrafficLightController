@@ -3,6 +3,10 @@
     "C_Cpp.default.compilerPath": "d:\\dev\\ARM 10 2021.10\\bin\\gccvar.bat",
     "files.associations": {
         "ir_receiver.pio.h": "c",
-        "ir_receiver.h": "c"
+        "ir_receiver.h": "c",
+        "stdlib.h": "c",
+        "light_controller.h": "c",
+        "pio.h": "c",
+        "gpio.h": "c"
     }
 }

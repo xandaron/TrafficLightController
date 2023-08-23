@@ -53,22 +53,22 @@ CMAKE_BINARY_DIR = D:\Projects\Pico\TrafficLightController\build
 
 # The main recursive "all" target.
 all: pico-sdk\all
-all: light_controller_library\all
 all: ir_receiver_library\all
+all: light_controller_library\all
 all: traffic_light_controller\all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: pico-sdk\preinstall
-preinstall: light_controller_library\preinstall
 preinstall: ir_receiver_library\preinstall
+preinstall: light_controller_library\preinstall
 preinstall: traffic_light_controller\preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: pico-sdk\clean
-clean: light_controller_library\clean
 clean: ir_receiver_library\clean
+clean: light_controller_library\clean
 clean: traffic_light_controller\clean
 .PHONY : clean
 
@@ -1725,59 +1725,6 @@ pico-sdk\src\rp2_common\pico_cyw43_driver\CMakeFiles\cyw43_driver_picow_cyw43_bu
 .PHONY : pico-sdk\src\rp2_common\pico_cyw43_driver\CMakeFiles\cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir\clean
 
 #=============================================================================
-# Target rules for target light_controller_library/CMakeFiles/light_controller_library.dir
-
-# All Build rule for target.
-light_controller_library\CMakeFiles\light_controller_library.dir\all: pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\all
-light_controller_library\CMakeFiles\light_controller_library.dir\all: light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\all
-	$(MAKE) $(MAKESILENT) -f light_controller_library\CMakeFiles\light_controller_library.dir\build.make /nologo -$(MAKEFLAGS) light_controller_library\CMakeFiles\light_controller_library.dir\depend
-	$(MAKE) $(MAKESILENT) -f light_controller_library\CMakeFiles\light_controller_library.dir\build.make /nologo -$(MAKEFLAGS) light_controller_library\CMakeFiles\light_controller_library.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Projects\Pico\TrafficLightController\build\CMakeFiles --progress-num=37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61 "Built target light_controller_library"
-.PHONY : light_controller_library\CMakeFiles\light_controller_library.dir\all
-
-# Build rule for subdir invocation for target.
-light_controller_library\CMakeFiles\light_controller_library.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\Pico\TrafficLightController\build\CMakeFiles 31
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) light_controller_library\CMakeFiles\light_controller_library.dir\all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\Pico\TrafficLightController\build\CMakeFiles 0
-.PHONY : light_controller_library\CMakeFiles\light_controller_library.dir\rule
-
-# Convenience name for target.
-light_controller_library: light_controller_library\CMakeFiles\light_controller_library.dir\rule
-.PHONY : light_controller_library
-
-# clean rule for target.
-light_controller_library\CMakeFiles\light_controller_library.dir\clean:
-	$(MAKE) $(MAKESILENT) -f light_controller_library\CMakeFiles\light_controller_library.dir\build.make /nologo -$(MAKEFLAGS) light_controller_library\CMakeFiles\light_controller_library.dir\clean
-.PHONY : light_controller_library\CMakeFiles\light_controller_library.dir\clean
-
-#=============================================================================
-# Target rules for target light_controller_library/CMakeFiles/light_controller_library_light_controller_pio_h.dir
-
-# All Build rule for target.
-light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\all: pico-sdk\src\rp2_common\tinyusb\CMakeFiles\PioasmBuild.dir\all
-	$(MAKE) $(MAKESILENT) -f light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\build.make /nologo -$(MAKEFLAGS) light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\depend
-	$(MAKE) $(MAKESILENT) -f light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\build.make /nologo -$(MAKEFLAGS) light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Projects\Pico\TrafficLightController\build\CMakeFiles --progress-num= "Built target light_controller_library_light_controller_pio_h"
-.PHONY : light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\all
-
-# Build rule for subdir invocation for target.
-light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\Pico\TrafficLightController\build\CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\Pico\TrafficLightController\build\CMakeFiles 0
-.PHONY : light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\rule
-
-# Convenience name for target.
-light_controller_library_light_controller_pio_h: light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\rule
-.PHONY : light_controller_library_light_controller_pio_h
-
-# clean rule for target.
-light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\clean:
-	$(MAKE) $(MAKESILENT) -f light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\build.make /nologo -$(MAKEFLAGS) light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\clean
-.PHONY : light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\clean
-
-#=============================================================================
 # Target rules for target ir_receiver_library/CMakeFiles/ir_receiver_library.dir
 
 # All Build rule for target.
@@ -1829,6 +1776,59 @@ ir_receiver_library_ir_receiver_pio_h: ir_receiver_library\CMakeFiles\ir_receive
 ir_receiver_library\CMakeFiles\ir_receiver_library_ir_receiver_pio_h.dir\clean:
 	$(MAKE) $(MAKESILENT) -f ir_receiver_library\CMakeFiles\ir_receiver_library_ir_receiver_pio_h.dir\build.make /nologo -$(MAKEFLAGS) ir_receiver_library\CMakeFiles\ir_receiver_library_ir_receiver_pio_h.dir\clean
 .PHONY : ir_receiver_library\CMakeFiles\ir_receiver_library_ir_receiver_pio_h.dir\clean
+
+#=============================================================================
+# Target rules for target light_controller_library/CMakeFiles/light_controller_library.dir
+
+# All Build rule for target.
+light_controller_library\CMakeFiles\light_controller_library.dir\all: pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\all
+light_controller_library\CMakeFiles\light_controller_library.dir\all: light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\all
+	$(MAKE) $(MAKESILENT) -f light_controller_library\CMakeFiles\light_controller_library.dir\build.make /nologo -$(MAKEFLAGS) light_controller_library\CMakeFiles\light_controller_library.dir\depend
+	$(MAKE) $(MAKESILENT) -f light_controller_library\CMakeFiles\light_controller_library.dir\build.make /nologo -$(MAKEFLAGS) light_controller_library\CMakeFiles\light_controller_library.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Projects\Pico\TrafficLightController\build\CMakeFiles --progress-num=37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61 "Built target light_controller_library"
+.PHONY : light_controller_library\CMakeFiles\light_controller_library.dir\all
+
+# Build rule for subdir invocation for target.
+light_controller_library\CMakeFiles\light_controller_library.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\Pico\TrafficLightController\build\CMakeFiles 31
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) light_controller_library\CMakeFiles\light_controller_library.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\Pico\TrafficLightController\build\CMakeFiles 0
+.PHONY : light_controller_library\CMakeFiles\light_controller_library.dir\rule
+
+# Convenience name for target.
+light_controller_library: light_controller_library\CMakeFiles\light_controller_library.dir\rule
+.PHONY : light_controller_library
+
+# clean rule for target.
+light_controller_library\CMakeFiles\light_controller_library.dir\clean:
+	$(MAKE) $(MAKESILENT) -f light_controller_library\CMakeFiles\light_controller_library.dir\build.make /nologo -$(MAKEFLAGS) light_controller_library\CMakeFiles\light_controller_library.dir\clean
+.PHONY : light_controller_library\CMakeFiles\light_controller_library.dir\clean
+
+#=============================================================================
+# Target rules for target light_controller_library/CMakeFiles/light_controller_library_light_controller_pio_h.dir
+
+# All Build rule for target.
+light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\all: pico-sdk\src\rp2_common\tinyusb\CMakeFiles\PioasmBuild.dir\all
+	$(MAKE) $(MAKESILENT) -f light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\build.make /nologo -$(MAKEFLAGS) light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\depend
+	$(MAKE) $(MAKESILENT) -f light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\build.make /nologo -$(MAKEFLAGS) light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Projects\Pico\TrafficLightController\build\CMakeFiles --progress-num= "Built target light_controller_library_light_controller_pio_h"
+.PHONY : light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\all
+
+# Build rule for subdir invocation for target.
+light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\Pico\TrafficLightController\build\CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\Pico\TrafficLightController\build\CMakeFiles 0
+.PHONY : light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\rule
+
+# Convenience name for target.
+light_controller_library_light_controller_pio_h: light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\rule
+.PHONY : light_controller_library_light_controller_pio_h
+
+# clean rule for target.
+light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\clean:
+	$(MAKE) $(MAKESILENT) -f light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\build.make /nologo -$(MAKEFLAGS) light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\clean
+.PHONY : light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\clean
 
 #=============================================================================
 # Target rules for target traffic_light_controller/CMakeFiles/traffic_light_controller.dir

@@ -77,5 +77,8 @@ traffic_light_controller\CMakeFiles\traffic_light_controller.dir\traffic_light_c
  D:\dev\pico-sdk\src\rp2_common\hardware_clocks\include/hardware/clocks.h \
  D:\dev\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/clocks.h \
  D:\dev\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/clocks.h \
+ D:\dev\pico-sdk\src\rp2_common\hardware_xosc\include/hardware/xosc.h \
+ D:\dev\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/xosc.h \
+ D:\dev\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/xosc.h \
  d:\projects\pico\trafficlightcontroller\ir_receiver_library\ir_receiver.h \
  d:\projects\pico\trafficlightcontroller\light_controller_library\light_controller.h

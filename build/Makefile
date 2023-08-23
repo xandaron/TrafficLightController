@@ -197,32 +197,6 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h\fast:
 .PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h\fast
 
 #=============================================================================
-# Target rules for targets named light_controller_library
-
-# Build rule for target.
-light_controller_library: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) light_controller_library
-.PHONY : light_controller_library
-
-# fast build rule for target.
-light_controller_library\fast:
-	$(MAKE) $(MAKESILENT) -f light_controller_library\CMakeFiles\light_controller_library.dir\build.make /nologo -$(MAKEFLAGS) light_controller_library\CMakeFiles\light_controller_library.dir\build
-.PHONY : light_controller_library\fast
-
-#=============================================================================
-# Target rules for targets named light_controller_library_light_controller_pio_h
-
-# Build rule for target.
-light_controller_library_light_controller_pio_h: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) light_controller_library_light_controller_pio_h
-.PHONY : light_controller_library_light_controller_pio_h
-
-# fast build rule for target.
-light_controller_library_light_controller_pio_h\fast:
-	$(MAKE) $(MAKESILENT) -f light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\build.make /nologo -$(MAKEFLAGS) light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\build
-.PHONY : light_controller_library_light_controller_pio_h\fast
-
-#=============================================================================
 # Target rules for targets named ir_receiver_library
 
 # Build rule for target.
@@ -247,6 +221,32 @@ ir_receiver_library_ir_receiver_pio_h: cmake_check_build_system
 ir_receiver_library_ir_receiver_pio_h\fast:
 	$(MAKE) $(MAKESILENT) -f ir_receiver_library\CMakeFiles\ir_receiver_library_ir_receiver_pio_h.dir\build.make /nologo -$(MAKEFLAGS) ir_receiver_library\CMakeFiles\ir_receiver_library_ir_receiver_pio_h.dir\build
 .PHONY : ir_receiver_library_ir_receiver_pio_h\fast
+
+#=============================================================================
+# Target rules for targets named light_controller_library
+
+# Build rule for target.
+light_controller_library: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) light_controller_library
+.PHONY : light_controller_library
+
+# fast build rule for target.
+light_controller_library\fast:
+	$(MAKE) $(MAKESILENT) -f light_controller_library\CMakeFiles\light_controller_library.dir\build.make /nologo -$(MAKEFLAGS) light_controller_library\CMakeFiles\light_controller_library.dir\build
+.PHONY : light_controller_library\fast
+
+#=============================================================================
+# Target rules for targets named light_controller_library_light_controller_pio_h
+
+# Build rule for target.
+light_controller_library_light_controller_pio_h: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) light_controller_library_light_controller_pio_h
+.PHONY : light_controller_library_light_controller_pio_h
+
+# fast build rule for target.
+light_controller_library_light_controller_pio_h\fast:
+	$(MAKE) $(MAKESILENT) -f light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\build.make /nologo -$(MAKEFLAGS) light_controller_library\CMakeFiles\light_controller_library_light_controller_pio_h.dir\build
+.PHONY : light_controller_library_light_controller_pio_h\fast
 
 #=============================================================================
 # Target rules for targets named traffic_light_controller
